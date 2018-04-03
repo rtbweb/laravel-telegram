@@ -218,7 +218,7 @@ class Telegram
      *
      * @return object $this
      */
-    public static function __callStatic($name, $arguments)
+    public function __callStatic($name, $arguments)
     {
         (!isset($this->resources[$name])) ? $this->resources[] = $name : null;
 
